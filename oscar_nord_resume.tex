@@ -1,4 +1,7 @@
+
+
 \documentclass[letterpaper,11pt]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -10,6 +13,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{textcomp}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -23,20 +27,26 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+%-------------------------
+% Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -46,11 +56,18 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
 \renewcommand{\labelitemii}{$\circ$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
 %----------HEADING-----------------
@@ -108,6 +125,7 @@
       \indent-- TUI (Tangible User Interface) application for navigating information on a large touch screen with physical cards.\\
       \indent-- Responsible for the image processing of the project.\\
       \indent-- Used OpenCV and ArUco to identify and find the positioning of the card in real-time.\\}
+      
     \resumeSubItem{Transcension3D \textit{(C++)} }
       { \\ 
       \indent-- 3D game engine written in C++ using OpenGL 3.3. \\
@@ -122,9 +140,11 @@
       \indent-- OpenStreetMap used as open data.\\
       \indent-- Project consists of a web server and an Android app.\\
       }
-    \resumeSubItem{Fluids \textit{(C++)} }
+      
+    \resumeSubItem{Starfruit, Spotify devX \textit{(JavaScript)} }
        {\\ 
-       \indent-- Fluid simulation using the \textit{Navier-Stokes}-equations done in the course TNM085, Modeling project, (OpenGL).}
+       \indent-- Website that matches music taste to different characters. \\  
+       \indent-- Built using Spotify WebAPI and Node.js.}
 
   \resumeSubHeadingListEnd
 
@@ -132,13 +152,14 @@
 \section{Leadership Experience}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming mentor, LiTHehack 17/18}
-      {\\
+      { \\
       \indent-- LiTHehack is a student-driven project at Linköping University aiming to help and inspire students with programming. \\
       \indent-- Available 4 hours every week and offer guidance in everything from web programming to C++.\\
       \indent-- Holding lectures about diverse programming related topics such as Git.\\}
       
     \resumeSubHeadingListEnd
   
+%
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
@@ -148,4 +169,5 @@
       \textbf{Technologies}{: OpenGL, OpenCV, Git}
     }
   \resumeSubHeadingListEnd
+%-------------------------------------------
 \end{document}
